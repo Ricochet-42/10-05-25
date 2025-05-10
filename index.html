@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css  ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="izq"></div>
+    <div id="der"></div>
+    <div id="cent"></div>
+
+
+
+    <div id="header">
+        <marquee style="width: 80%;" behavior="scroll" direction="left" scrollamount="5">
+            <h1>Feliz Dia de las Madres</h1>
+          </marquee>
+        
+    </div>
+    
+    <div id="cont11"><img src="img/centro.png" alt=""><div class="blur"></div></div>
+    <div id="cont0">
+        <div id="texto">
+            Feliz Día de las Madres. Solo queríamos decirte lo mucho que valoramos todo lo que haces, tanto en casa como en el trabajo. Sabemos que ser supervisora no es nada fácil, y aun así siempre estás pendiente de nosotros y de todo lo demás.
+
+
+        </div>
+        
+        <img src="img/corazo.jpg" id="corazo" alt="">
+    </div>
+    <div id="cont1">
+        <div id="cont122">Esperamos pronto te regreses a Dolores. Hace falta tenerte más cerca, te hace falta un descanzo y estar con tus niños latosos, porque te lo mereces un montón.</div><div class="blur"></div></div>
+
+
+
+    <div id="cont2">
+        <div id="carrusel">
+            <ul>
+                <li><img src="img/mama1.jpg" alt=""></li>
+        
+                <li><img src="img/mama2.jpg" alt=""></li>
+                
+                <li><img src="img/mama3.jpg" alt=""></li>
+                
+                <li><img src="img/mama4.jpg" alt=""></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    
+
+    <div id="cont3"><div id="cont122" style="left: 10%;">Te queremos mucho y estamos muy agradecidos por todo lo que has hecho por nosotros. ¡Que tengas un gran día, mamá!
+
+    </div><div class="blur"></div></div>
+
+    <div id="cont01">
+        <div id="texto2" >Atentamente: <br> tu hijo lalo</div></div>
+
+        <script>
+        const button = document.getElementById('cent');
+        const izq = document.getElementById('izq');
+        const der = document.getElementById('der');
+        button.addEventListener('click', function() {
+
+            izq.classList.add('slide-left');
+        der.classList.add('slide-right');
+        cent.classList.add('slide-out-center');
+
+        setTimeout(() => {
+                izq.style.display = 'none';
+                der.style.display = 'none';
+                button.style.display = 'none';
+            }, 3000);
+        })
+
+
+        
+
+        </script>
+</body>
+</html>
